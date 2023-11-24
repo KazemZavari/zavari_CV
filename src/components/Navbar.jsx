@@ -4,7 +4,7 @@ import "../styles.css";
 
 const Navbar = () => {
   const [draweropen, setDraweropen] = useState(true);
-  console.log(draweropen);
+  // console.log(draweropen);
 
   window.onscroll = () => {
     scrollFunction();
