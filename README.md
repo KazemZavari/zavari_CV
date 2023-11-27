@@ -1,8 +1,8 @@
-# react-tailwind-portfolio
+# zavari_CV
 
-+ <a href="https://www.youtube.com/watch?v=hYv6BM2fWd8">Design</a>
 
-+ Made with tailwind
+
++ Made with vite & tailwindCss
 
 ![Ekran görüntüsü 2023-01-28 221435](https://user-images.githubusercontent.com/104009655/215286744-b85473b0-22cd-4deb-9152-149cad4c90cd.png)
 
