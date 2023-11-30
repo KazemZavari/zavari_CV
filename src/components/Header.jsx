@@ -15,9 +15,9 @@ const Header = () => {
       >
         <Navbar />
         <div className="wrapper flex justify-between items-center h-screen w-full px-20 
-                        lg:justify-center lg:px-6">
+                        lg:justify-center lg:px-6"> 
           <div className="content lg:text-center">
-            <div className="btn py-3">
+            <div className="btn py-3"> 
               <button className=" border-2 border-[#b0aaaa] font-bold text-white p-4 rounded-2xl
                                  bg-[linear-gradient(90deg,#b004b0,#38097a)] ">
                 Welcome to my CV
