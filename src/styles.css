@@ -1,55 +1,59 @@
-swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: black;
-  
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .img-box:hover .p{
-    top: 0;
-  }
-
-  .p{
-    transition: 0.5s all;
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
-  .banner-astronout {
-    position: absolute;
-    animation: astronout 2s infinite alternate linear;
-    -webkit-animation: astronout  4s infinite alternate linear;
-    width: 400px;
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-box:hover .p {
+  top: 0;
+}
+
+.p {
+  transition: 0.5s all;
+}
+
+.banner-astronout {
+  position: absolute;
+  animation: astronout 2s infinite alternate linear;
+  -webkit-animation: astronout 4s infinite alternate linear;
+  width: 400px;
 }
 
 .banner-astronout1 {
   position: absolute;
   animation: astronout1 2s infinite alternate linear;
-  -webkit-animation: astronout1  4s infinite alternate linear;
+  -webkit-animation: astronout1 4s infinite alternate linear;
   width: 400px;
 }
 
@@ -65,7 +69,6 @@ swiper {
   }
 }
 
-
 @keyframes astronout {
   0% {
     left: 50%;
@@ -78,10 +81,23 @@ swiper {
   }
 }
 
-.bla{
-  transition: transform ease .4s;
+.bla {
+  transition: transform ease 0.5s;
   padding: 0 10px;
+  font-family: "Oswald-Regular";
 }
-.bla:hover{
-  transform: scale(1.4);
+.bla:hover {
+  transform: scale(1.2);
+  color: #FFB86C;
+}
+
+.navbar-opacity {
+
+  background-color: #282A36;
+  opacity: .8;
+  
+}
+.navbar-opacity:hover{
+  opacity: .9;
+
 }

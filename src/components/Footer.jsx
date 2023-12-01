@@ -15,7 +15,9 @@ const Footer = () => {
               <i className="fa-brands fa-github border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
           </div>
+
         </div>
+
       </div>
     </>
   );

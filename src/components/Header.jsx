@@ -4,14 +4,14 @@ import bg from "../assets/images/bg.jpg";
 import bg2 from "../assets/images/18.jpg";
 import Navbar from "./Navbar";
 import "../styles.css";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const Header = () => {
   return (
     <>
       <div
         id="home"
         style={{ backgroundImage: `url(${bg2})` }}
-        className="bg-cover bg-no-repeat h-screen flex flex-col "
+        className="bg-cover bg-no-repeat h-screen flex overflow-y-hidden "
       >
         <Navbar />
         <div className="wrapper flex justify-between items-center h-screen w-full px-20 
@@ -30,17 +30,18 @@ const Header = () => {
               adipisci pariatur. adipisicing elit. In qui impedit ipsum dolor
               sit amet consectetur
             </p>
-            <button className="  text-white text-2xl">
+            <AnchorLink href="#contactForm" offset='95' 
+            className="text-white hover:text-Orange font-MontserratBold  text-[28px]">
               Let's Connect{" "}
               <i className="fa-solid fa-arrow-right text-lg  p-[2px] "></i>{" "}
-            </button>
+            </AnchorLink>
           </div>
-          <div className="image banner-astronout lg:hidden absolute w-[200px] flex ">
+          {/* <div className="image banner-astronout lg:hidden absolute w-[200px] flex ">
             <img className="w-80 ast-img" src={logo1} alt="" />
           </div>
           <div className="image banner-astronout1 lg:hidden absolute w-[200px] flex ">
             <img className="w-96 ast-img" src={logo} alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

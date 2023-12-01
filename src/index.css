@@ -2,16 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
 }
-
-body{
-    /* color: white; */
+@font-face {
+  font-family: "RalewayBold";
+  src: url("./assets/fonts/Raleway/static/Raleway-Bold.ttf");
 }
-
-html,body{
-    overflow-x: hidden;
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("./assets/fonts/Open_Sans/static/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("./assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "OpenSans_SemiCondensed-Medium";
+  src: url("./assets/fonts/Open_Sans/static/OpenSans_SemiCondensed-Medium.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("./assets/fonts/Open_Sans/static/OpenSans_SemiCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./assets/fonts/Open_Sans/static/OpenSans_Condensed-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald-Light";
+  src: url("./assets/fonts/Oswald/static/Oswald-Light.ttf");
+}
+@font-face {
+  font-family: "Oswald-SemiBold";
+  src: url("./assets/fonts/Oswald/static/Oswald-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("./assets/fonts/Oswald/static/Oswald-Medium.ttf");
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("./assets/fonts/Oswald/static/Oswald-Bold.ttf");
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("./assets/fonts/Oswald/static/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald-ExtraLight";
+  src: url("./assets/fonts/Oswald/static/Oswald-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url("./assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "PlayfairDisplay-SemiBold";
+  src: url("./assets/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
 }

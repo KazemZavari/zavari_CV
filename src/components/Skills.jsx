@@ -7,12 +7,27 @@ import { Navigation } from "swiper";
 import { Pagination } from "swiper";
 import img from "../assets/images/meter1.svg";
 import bg from "../assets/images/banner-bg.png"
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; import "../styles.css";
 
 function Skills() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      offset: 200,
+    });
+    AOS.refresh();
+
+  }, []);
   return (
     <>
-      <div id="skills" style={{backgroundImage: `url(${bg})`}} className="wrapper h-full bg-no-repeat bg-center bg-cover p-16 lg:p-4">
-        <div className="skills-wrapper text-center text-white bg-[#171717]  p-10 rounded-[50px] lg:p-2">
+      <div id="skills" style={{ backgroundImage: `url(${bg})` }}
+        className="wrapper bg-no-repeat bg-center bg-cover p-16 lg:p-4 ">
+        <div 
+        // data-aos="fade-up" 
+          className="skills-wrapper text-center text-white bg-[#202746] 
+                   p-10 rounded-[50px] lg:p-2">
           <h1 className="text-4xl ">Skills</h1>
           <p className="text-lg py-3">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.

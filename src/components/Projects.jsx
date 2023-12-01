@@ -2,13 +2,24 @@ import React, { useState } from "react";
 import img1 from "../assets/images/project-img1.png";
 import img2 from "../assets/images/project-img2.png";
 import img3 from "../assets/images/project-img3.png";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";import "../styles.css";
 import "../styles.css";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const [draweropen, setDraweropen] = useState(1);
-
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 1200,
+      // easing: 'ease-in-sine',
+      delay: 200,
+    });
+    AOS.refresh();
+   
+  }, []);
   const projects = [
     {
       id: 1,
@@ -50,7 +61,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="projects bg-[#171717] text-white py-10">
+      <div  id="projects" className="projects bg-[#171717] text-white py-10 overflow-hidden">
         <h1 className="text-center text-4xl font-bold py-6">My Projects</h1>
         <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
           lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
@@ -84,7 +95,7 @@ const Projects = () => {
             Text-2
           </button>
         </div>
-        <div className="grid grid-cols-3 p-10 justify-center items-center gap-8 lg:grid-cols-2 
+        <div  className="grid grid-cols-3 p-10 justify-center items-center gap-8 lg:grid-cols-2 
                         tl:grid-cols-1  ">
           {draweropen === 1
             ? projects.map((item, i) => <ProjectCard key={i} item={item} />)
