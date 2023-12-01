@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <>
       <div  id="projects" className="projects bg-[#171717] text-white py-10 overflow-hidden">
-        <h1 className="text-center text-4xl font-bold py-6">My Projects</h1>
+        <h1 className="text-center  mt-16 text-4xl font-bold py-6">My Projects</h1>
         <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
           lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
           cupiditate! Molestiae placeat architecto nihil obcaecati illum minima

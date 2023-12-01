@@ -23,10 +23,10 @@ function Skills() {
   return (
     <>
       <div id="skills" style={{ backgroundImage: `url(${bg})` }}
-        className="wrapper bg-no-repeat bg-center bg-cover p-16 lg:p-4 ">
+        className="wrapper bg-no-repeat bg-center bg-cover p-16 lg:p-4  ">
         <div 
         // data-aos="fade-up" 
-          className="skills-wrapper text-center text-white bg-[#202746] 
+          className="skills-wrapper text-center text-white bg-[#202746] mt-28
                    p-10 rounded-[50px] lg:p-2">
           <h1 className="text-4xl ">Skills</h1>
           <p className="text-lg py-3">

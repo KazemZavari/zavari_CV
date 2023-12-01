@@ -54,29 +54,29 @@
   position: absolute;
   animation: astronout1 2s infinite alternate linear;
   -webkit-animation: astronout1 4s infinite alternate linear;
-  width: 400px;
+  width: 300px;
 }
 
 @keyframes astronout1 {
   0% {
-    left: 70%;
+    left: 90%;
     top: 25%;
   }
 
   100% {
-    left: 60%;
-    top: 35%;
+    left: 75%;
+    top: 30%;
   }
 }
 
 @keyframes astronout {
   0% {
-    left: 50%;
+    left: 60%;
     top: 45%;
   }
 
   100% {
-    left: 40%;
+    left: 50%;
     top: 35%;
   }
 }

@@ -1,6 +1,7 @@
 import logo from "../assets/images/astronout.png";
 import logo1 from "../assets/images/astronout1.png";
 import bg from "../assets/images/bg.jpg";
+import SocialNetworks from "../components/SocialNetworks"
 import bg2 from "../assets/images/18.jpg";
 import Navbar from "./Navbar";
 import "../styles.css";
@@ -35,11 +36,12 @@ const Header = () => {
               Let's Connect{" "}
               <i className="fa-solid fa-arrow-right text-lg  p-[2px] "></i>{" "}
             </AnchorLink>
+            <SocialNetworks />
           </div>
-          {/* <div className="image banner-astronout lg:hidden absolute w-[200px] flex ">
+          {/* <div className="image banner-astronout lg:hidden absolute w-[100px] flex ">
             <img className="w-80 ast-img" src={logo1} alt="" />
           </div>
-          <div className="image banner-astronout1 lg:hidden absolute w-[200px] flex ">
+          <div className="image banner-astronout1 lg:hidden absolute w-[100px] flex ">
             <img className="w-96 ast-img" src={logo} alt="" />
           </div> */}
         </div>
