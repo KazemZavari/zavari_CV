@@ -94,10 +94,43 @@
 .navbar-opacity {
 
   background-color: #282A36;
-  opacity: .8;
+  opacity: 1;
   
 }
-.navbar-opacity:hover{
-  opacity: .9;
+.navbar__link {
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: .1em;
+  text-indent: .3em;
+  border-bottom: 3px solid transparent;
+ 
+}
 
+.navbar__link::after {
+  transition: all ease-in-out .2s;
+  background-color: red;
+  content: "";
+  display: block;
+  margin-top: 2px;
+  height: 3px;
+  width: 0;
+}
+
+ .navbar__link:hover::after {
+  visibility: visible;
+  width: 40%;
+
+}
+
+.navbar__link[aria-selected=true]::after {
+  transition: all ease-in-out .2s;
+
+  width: 100%;
+}
+
+.navbar__link--active:hover::after {
+  width: 100%;
 }

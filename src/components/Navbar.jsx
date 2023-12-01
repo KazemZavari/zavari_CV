@@ -13,8 +13,8 @@ const Navbar = () => {
 
   const scrollFunction = () => {
     if (
-      document.body.scrollTop > 1 ||
-      document.documentElement.scrollTop > 1
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
     ) {
       document.querySelector(".navbar").classList.add("navbar-opacity");
     } else {

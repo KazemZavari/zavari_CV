@@ -8,11 +8,14 @@ const NavMenu = () => {
   return (
     <>
      
-        <div component="nav" className="main-menu">
+        <div component="nav" className="main-menu  ">
+        {/* border-bottom: 3px solid transparent; */}
           <ul className="flex ">
             {menuItems.map((item, index) => (
               <li key={index} className="mr-1 px-[8px] xl:px-[10px] ">
-                <Link className="main-menu-items" to={item.link}>
+                <Link  className="navbar__link "
+                
+                to={item.link}>
                   {item.title}
                 </Link>
               </li>
