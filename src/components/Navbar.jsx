@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import DarkModeToggle from "react-dark-mode-toggle";
 
 
 const Navbar = () => {
   const [draweropen, setDraweropen] = useState(true);
-  
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
   window.onscroll = () => {
     scrollFunction();
   };
@@ -12,7 +13,7 @@ const Navbar = () => {
   const scrollFunction = () => {
     if (
       document.body.scrollTop > 1 ||
-      document.documentElement.scrollTop > 1 
+      document.documentElement.scrollTop > 1
     ) {
       document.querySelector(".btn").style.backgroundColor = "#FFB86C";
       document.querySelector(".navbar").classList.add("navbar-opacity");
@@ -27,7 +28,11 @@ const Navbar = () => {
       <div className="navbar flex justify-between items-center px-20 py-6 bg-transparent z-40
                      text-white lg:px-6 fixed w-full ">
         <h1 className="text-[32px] cursor-pointer font-OswaldRegular">Dev_24</h1>
-
+        <DarkModeToggle
+          onChange={setIsDarkMode}
+          checked={isDarkMode}
+          size={55}
+        />
         <nav
           className={` flex justify-center items-center gap-x-10 ${draweropen && "lg:hidden"
             } lg:fixed lg:top-0 -z-20  lg:flex-col lg:w-full lg:bg-[#171717] lg:opacity-90 
