@@ -16,10 +16,8 @@ const Navbar = () => {
       document.body.scrollTop > 1 ||
       document.documentElement.scrollTop > 1
     ) {
-      document.querySelector(".btn").style.backgroundColor = "#FFB86C";
       document.querySelector(".navbar").classList.add("navbar-opacity");
     } else {
-      document.querySelector(".btn").style.backgroundColor = "#282A36";
       document.querySelector(".navbar").classList.remove("navbar-opacity");
     }
   }
@@ -29,7 +27,7 @@ const Navbar = () => {
       <div className="navbar flex justify-between items-center px-20 py-6 bg-transparent z-40
                      text-white lg:px-6 fixed w-full ">
         <h1 className="text-[32px] cursor-pointer font-OswaldRegular">Dev_24</h1>
-   
+
         <nav
           className={` flex justify-center items-center gap-x-10 ${draweropen && "lg:hidden"
             } lg:fixed lg:top-0 -z-20  lg:flex-col lg:w-full lg:bg-[#171717] lg:opacity-90 
@@ -46,8 +44,8 @@ const Navbar = () => {
               <AnchorLink href="#projects" offset='30'>Projects</AnchorLink>
             </li>
           </ul> */}
-<NavMenu />
-        
+          <NavMenu />
+
 
           {/* <AnchorLink href="#contactForm" offset='95'
             className="btn border-[2px] border-white border-solid py-2 px-4 text-[18px]
