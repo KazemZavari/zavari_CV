@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -88,30 +87,26 @@
 }
 .bla:hover {
   transform: scale(1.2);
-  color: #FFB86C;
+  color: #ffb86c;
 }
 
 .navbar-opacity {
-
-  background-color: #282A36;
+  background-color: #132a35;
   opacity: 1;
-  
 }
 .navbar__link {
-  /* margin-left: 0.75em;
-  margin-right: 0.75em; */
-  font-size: 1em;
+  font-size: 22px;
+  font-family: "Oswald-Regular";
   cursor: pointer;
   text-decoration: none;
-  letter-spacing: .1em;
-  text-indent: .3em;
+  letter-spacing: 0.03em;
+  text-indent: 0.3em;
   border-bottom: 3px solid transparent;
- 
 }
 
 .navbar__link::after {
-  transition: all ease-in-out .2s;
-  background-color: red;
+  transition: all ease-in-out 0.2s;
+  background-color: #fa7d22;
   content: "";
   display: block;
   margin-top: 3px;
@@ -119,29 +114,16 @@
   width: 0;
 }
 
- .navbar__link:hover::after {
+.navbar__link:hover::after {
   visibility: visible;
-  width: 45%;
-
+  width: 40%;
 }
 
 .navbar__link--active::after {
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
   width: 100%;
-  transition: all ease-in-out .2s;
-  background-color: red;
-  content: "";
-  display: block;
-  margin-top: 3px;
-  height: 3px;
 }
 
 .navbar__link--active:hover::after {
   width: 100%;
-  transition: all ease-in-out .2s;
-  background-color: red;
-  content: "";
-  display: block;
-  margin-top: 3px;
-  height: 3px;
 }

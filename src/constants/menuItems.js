@@ -4,11 +4,29 @@ export const menuItems = [
     link: "/",
   },
   {
+    title: "About",
+    link: "about",
+  },
+  {
     title: "Skills",
-    link: "Skills",
+    link: "skills",
+  },
+  {
+    title: "Education",
+    link: "education",
+  },
+  {
+    title: "Experience",
+    link: "experience",
   },
   {
     title: "Projects",
-    link: "Projects",
+    link: "projects",
   },
+  {
+    title: "Resume",
+    link: "resume",
+  },
+
+
 ];

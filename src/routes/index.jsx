@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Link, createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Header from "../components/Header";
 import Skills from "../components/Skills"
@@ -13,16 +13,30 @@ export const router = createBrowserRouter([
                 path: "/",
                 element: <Header />,
             },
+            {
+                path: "/about",
+                element: <Skills />,
+            },
 
             {
-                path: "/Skills",
+                path: "/skills",
                 element: <Skills />,
             },
             {
-                path: "/Projects",
-                element: <Projects />
-                  
-                ,
+                path: "/education",
+                element: <Projects />                 
+            },
+            {
+                path: "/experience",
+                element: <Projects />                 
+            },
+            {
+                path: "/projects",
+                element: <Projects />                 
+            },
+            {
+                path: "/resume",
+                element: <Projects />                 
             },
 
         ],

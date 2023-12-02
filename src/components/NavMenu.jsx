@@ -1,6 +1,5 @@
 
 import { menuItems } from "../constants/menuItems"
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 // import { useTheme } from "@emotion/react";
 
@@ -14,7 +13,7 @@ const NavMenu = () => {
         <ul className="flex ">
           {menuItems.map((item, index) => (
             <li key={index} className="mr-1 px-[8px] xl:px-[10px] ">
-              <NavLink className={({ isActive }) => isActive ? "navbar__link--active" : "navbar__link"}
+              <NavLink className={({ isActive }) => isActive ? "navbar__link navbar__link--active" : "navbar__link"}
 
                 to={item.link}>
                 {item.title}
