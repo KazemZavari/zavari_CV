@@ -24,19 +24,19 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/education",
-                element: <Projects />                 
+                element: <Projects />
             },
             {
                 path: "/experience",
-                element: <Projects />                 
+                element: <Projects />
             },
             {
                 path: "/projects",
-                element: <Projects />                 
+                element: <Projects />
             },
             {
                 path: "/resume",
-                element: <Projects />                 
+                element: (<>the page of resume address</>)
             },
 
         ],
