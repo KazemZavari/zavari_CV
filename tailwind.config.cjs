@@ -14,6 +14,7 @@ module.exports = {
       gray_font: "#596971",
       semiGray_font: "#e9ebec",
       mainBackground: "#132a35",
+      background:"#16303d",
       background_2: "#324148",
       background_hover: "#42555d",
       Forground_light: "#f5f6f6",

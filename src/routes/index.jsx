@@ -1,7 +1,9 @@
 import { Link, createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Header from "../components/Header";
-import Skills from "../components/Skills"
+import Skills2 from "../components/Skills2";
+import About from "../components/About";
+ 
 import Projects from "../components/Projects"
 export const router = createBrowserRouter([
     {
@@ -15,12 +17,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <Skills />,
+                element: <About />,
             },
 
             {
                 path: "/skills",
-                element: <Skills />,
+                element: <Skills2 />,
             },
             {
                 path: "/education",

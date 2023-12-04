@@ -90,10 +90,6 @@
   color: #ffb86c;
 }
 
-.navbar-opacity {
-  background-color: #132a35;
-  opacity: 1;
-}
 .navbar__link {
   font-size: 22px;
   font-family: "Oswald-Regular";
@@ -126,4 +122,11 @@
 
 .navbar__link--active:hover::after {
   width: 100%;
+}
+.section-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
 }

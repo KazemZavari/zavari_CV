@@ -1,4 +1,3 @@
-
 import { menuItems } from "../constants/menuItems"
 import { NavLink } from "react-router-dom";
 // import { useTheme } from "@emotion/react";
@@ -8,7 +7,7 @@ const NavMenu = () => {
   return (
     <>
 
-      <div component="nav" className="main-menu  ">
+      <div component="nav">
         {/* border-bottom: 3px solid transparent; */}
         <ul className="flex ">
           {menuItems.map((item, index) => (

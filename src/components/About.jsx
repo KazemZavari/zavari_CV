@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Container, Col, Row } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
-import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 
@@ -21,17 +18,14 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
+
   },
 };
 
-function About(props) {
-  const { header } = props;
+const About = () => {
   const [data, setData] = useState(null);
-
   const parseIntro = (text) => (
-    <ReactMarkdown
-      children={text}
-    />
+    <ReactMarkdown children={text} />
   );
 
   useEffect(() => {
@@ -45,31 +39,34 @@ function About(props) {
 
   return (
     <>
-      <Header title={header} />
-      <div className="section-content-container">
-        <Container>
+      <div className="section-content-container bg-background_2">
+        <div className='w-[1024px] mt-24'>
+          <h4 className='my-5 flex justify-center'>{data? data.title : ""}</h4>
           {data
             ? (
               <Fade>
-                <Row>
-                  <Col style={styles.introTextContainer}>
+                <div className='grid grid-cols-2 '>
+
+                  <div style={styles.introTextContainer}
+                    className=' col-span-1 justify-center'>
                     {parseIntro(data.about)}
-                  </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
-                  </Col>
-                </Row>
+                  </div>
+                  <div style={styles.introImageContainer}
+                    className='col-span-1 ' >
+                    <img className='rounded-[40%]'
+                      src={data?.imageSource}
+                      alt="profile" />
+                  </div>
+
+                </div>
+
               </Fade>
             )
             : <FallbackSpinner />}
-        </Container>
+        </div>
       </div>
     </>
   );
 }
-
-About.propTypes = {
-  header: PropTypes.string.isRequired,
-};
 
 export default About;

@@ -7,24 +7,24 @@ import NavMenu from "./NavMenu";
 const Navbar = () => {
   const [draweropen, setDraweropen] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(() => false);
-  window.onscroll = () => {
-    scrollFunction();
-  };
+  // window.onscroll = () => {
+  //   scrollFunction();
+  // };
 
-  const scrollFunction = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      document.querySelector(".navbar").classList.add("navbar-opacity");
-    } else {
-      document.querySelector(".navbar").classList.remove("navbar-opacity");
-    }
-  }
+  // const scrollFunction = () => {
+  //   if (
+  //     document.body.scrollTop > 80 ||
+  //     document.documentElement.scrollTop > 80
+  //   ) {
+  //     document.querySelector(".navbar").classList.add("navbar-opacity");
+  //   } else {
+  //     document.querySelector(".navbar").classList.add("navbar-opacity");
+  //   }
+  // }
 
   return (
     <>
-      <div className="navbar flex justify-between items-center px-20 py-6 bg-transparent z-40
+      <div className="  flex justify-between items-center bg-background_2 px-20 py-6 z-40
                      text-white lg:px-6 fixed w-full ">
         <h1 className="text-[32px] cursor-pointer font-OswaldRegular">Dev_24</h1>
 
