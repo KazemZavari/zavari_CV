@@ -1,12 +1,20 @@
 {
-    "social": [        
-        {
-            "network" : "github",
-            "href": "https://github.com/codeRockStar1992"
-        },
-        {
-            "network" : "email",
-            "href": "mailto:19920109johnolson@gmail.com"
-        }
-    ]
+  "social": [
+    {
+      "network": "email",
+      "href": "mailto:kazemzavari.69@gmail.com"
+    },
+    {
+      "network": "github",
+      "href": "https://github.com/KazemZavari"
+    },
+    {
+      "network": "linkedin",
+      "href": "https://www.linkedin.com/in/kazem-zavari-2ba22424a"
+    },
+    {
+      "network": "telegram",
+      "href": "https://t.me/FrontEnd_Dev_24"
+    }
+  ]
 }

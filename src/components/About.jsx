@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import Social from './Social';
 
 const styles = {
   introTextContainer: {
@@ -39,7 +40,9 @@ const About = () => {
 
   return (
     <>
+ 
       <div className="section-content-container bg-background_2">
+             
         <div className='w-[1024px] mt-24'>
           <h4 className='my-5 flex justify-center'>{data? data.title : ""}</h4>
           {data
@@ -59,8 +62,10 @@ const About = () => {
                   </div>
 
                 </div>
+          
 
               </Fade>
+              
             )
             : <FallbackSpinner />}
         </div>

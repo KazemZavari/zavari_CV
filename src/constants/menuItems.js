@@ -15,13 +15,18 @@ export const menuItems = [
     title: "Education",
     link: "education",
   },
-  {
-    title: "Experience",
-    link: "experience",
-  },
+
+  // {
+  //   title: "Experience",
+  //   link: "experience",
+  // },
   {
     title: "Projects",
     link: "projects",
+  },
+  {
+    title: "Contact",
+    link: "contact",
   },
   {
     title: "Resume",

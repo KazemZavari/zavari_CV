@@ -24,14 +24,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="  flex justify-between items-center bg-background_2 px-20 py-6 z-40
-                     text-white lg:px-6 fixed w-full ">
+      <div className="flex justify-between items-center bg-background opacity-90 
+                      lg:opacity-100  px-20 py-3 z-20 text-white lg:px-6 fixed w-full ">
         <h1 className="text-[32px] cursor-pointer font-OswaldRegular">Dev_24</h1>
 
         <nav
           className={` flex justify-center items-center gap-x-10 ${draweropen && "lg:hidden"
-            } lg:fixed lg:top-0 -z-20  lg:flex-col lg:w-full lg:bg-[#171717] lg:opacity-90 
-               lg:h-[450px] lg:left-0 h-full lg:items-start  lg:pl-6  cursor-pointer lg:pt-20`}
+            } lg:fixed lg:top-0 z-20  lg:flex-col lg:w-full lg:bg-background  lg:opacity-90 
+               lg:h-[450px] lg:left-0 h-full lg:items-start  lg:pl-6 cursor-pointer lg:pt-20`}
         >
           {/* <ul className=" flex gap-10 text-3xl mr-4 lg:flex-col lg:gap-6 ">
             <li className="bla ">

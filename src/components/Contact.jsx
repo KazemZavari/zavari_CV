@@ -17,9 +17,9 @@ const Contact = () => {
   return (
     <>
       <div id="contactForm" className="contact bg-[linear-gradient(90deg,#b004b0,#38097a);] w-full">
-        <div   className="wrapper flex justify-center  py-16 gap-52 lg:py-12">
+        <div   className="wrapper flex justify-center py-28 gap-52 lg:py-12">
           <div className="imgbox lg:hidden">
-            <img className="w-[550px] h-full" src={img} alt="" />
+            <img className="w-[500px] h-full" src={img} alt="" />
           </div>
           <div className="content-box">
             <h1 className="text-white font-bold text-4xl">Get In Touch</h1>
@@ -49,7 +49,7 @@ const Contact = () => {
                 />
               </div>
               <textarea
-                className="bg-transparent rounded-2xl border-[1px] border-white h-36 pl-4 text-white w-full placeholder-white pt-2"
+                className="bg-transparent rounded-2xl border-[1px] border-white h-44 pl-4 text-white w-full placeholder-white pt-2"
                 rows={40}
                 cols={35}
                 placeholder="Message"
