@@ -43,10 +43,10 @@ const Home = () => {
                 Hi! I'm Kazem Zavari
               </h1>
               <div className="flex flex-row justify-center align-middle text-[30px] text-Orange 
-                               font-PlayfairDisplaySemiBold my-4 py-2 lg:py-1 lg:my-2 md:text-[21px]
+                               ont-PlayfairDisplayRegular my-4 py-2 lg:py-1 lg:my-2 md:text-[21px]
                                sm:py-8 ">
                 <h2 className="inline-block  text-[30px] md:text-[21px] text-Orange
-                               font-PlayfairDisplaySemiBold">
+                               font-PlayfairDisplayRegular">
                   I&apos;m&nbsp;
                 </h2>
                 <Typewriter
@@ -57,7 +57,7 @@ const Home = () => {
                   }}
                 />
               </div>
-              <div className="mt-20 mb-3 lg:mt-6 sm:mt-7 ">
+              <div className="mt-20 mb-3 lg:mt-12 md:mt-20 sm:mt-7 ">
                 <Link to="/contact" offset='95'
                   className="text-white hover:text-Orange font-MontserratBold text-[28px]
                             md:text-[20px]">
