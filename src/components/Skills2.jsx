@@ -41,7 +41,7 @@ function Skills2() {
 
       {data ? (
         <Fade>
-          <div className="section-content-container bg-gray_font">
+          <div className=" flex justify-center align-middle flex-grow bg-gray_font">
             <div className='w-[1024px] mt-24'>
               {renderSkillsIntro(data.intro)}
               {data.skills?.map((rows) => (

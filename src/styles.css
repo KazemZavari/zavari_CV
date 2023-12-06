@@ -123,10 +123,10 @@
 .navbar__link--active:hover::after {
   width: 100%;
 }
-.section-content-container {
+/* .section-content-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-}
+} */

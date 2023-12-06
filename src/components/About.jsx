@@ -3,23 +3,14 @@ import ReactMarkdown from 'react-markdown';
 import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
-import Social from './Social';
-
+import { Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
 const styles = {
   introTextContainer: {
-    margin: 10,
-    flexDirection: 'column',
     whiteSpace: 'pre-wrap',
-    textAlign: 'left',
+    textAlign: 'center',
+    textAlign:'justify',
     fontSize: '1.2em',
-    fontWeight: 500,
-  },
-  introImageContainer: {
-    margin: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    display: 'flex',
-
   },
 };
 
@@ -40,32 +31,56 @@ const About = () => {
 
   return (
     <>
- 
-      <div className="section-content-container bg-background_2">
-             
-        <div className='w-[1024px] mt-24'>
-          <h4 className='my-5 flex justify-center'>{data? data.title : ""}</h4>
+
+      <div className="flex justify-center flex-grow ">
+        <div className='w-[1024px] mt-24 lg:px-16  '>
+          <h4 className='flex justify-center my-4 font-OswaldBold text-[28px] 
+                          '>
+            {data ? data.title : ""}
+            
+          </h4>
           {data
             ? (
               <Fade>
-                <div className='grid grid-cols-2 '>
-
+                <div className='grid grid-cols-3 '>
+               
                   <div style={styles.introTextContainer}
-                    className=' col-span-1 justify-center'>
+                    className=' col-span-2 lg:col-span-3 font-OpenSansSemiBold xl:pl-5 '>
                     {parseIntro(data.about)}
+                    <Link to="/contact" 
+                  className="inline-block hover:text-Orange font-PlayfairDisplaySemiBold
+                             text-[19px] md:text-[16px] pt-2">
+                  Let's Connect Me{" "}
+                  <i className="fa-solid fa-arrow-right text-lg p-[2px] "></i>{" "}
+                </Link>
                   </div>
-                  <div style={styles.introImageContainer}
-                    className='col-span-1 ' >
-                    <img className='rounded-[40%]'
+
+                  <div
+                    className='col-span-1 mt-2 flex justify-center lg:hidden' >
+                    <Avatar
                       src={data?.imageSource}
-                      alt="profile" />
+                      className='border-4 border-Orange'
+                      variant="rounded"
+                      sx={{
+                        height: 280,
+                        width: 280,
+                        margin: "0 auto",
+                        display: {
+                          xl: "block",
+                          lg: "block",
+                          md: "block",
+                          sm: "none",
+                          xs: "none",
+                        },
+                      }}
+                    />
                   </div>
 
                 </div>
-          
+
 
               </Fade>
-              
+
             )
             : <FallbackSpinner />}
         </div>

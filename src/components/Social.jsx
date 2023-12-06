@@ -18,7 +18,7 @@ const Social = () => {
     }, []);
   
     return (
-      <div className=" fixed mt-64 lg:mt-52 md:mt-52 bg-Green p-3 rounded-[10px] ">
+      <div className=" fixed mt-64 lg:mt-[183px] md:mt-52 sm:mt-80 bg-Green p-4  lg:py-2  rounded-[10px] ">
         {data ? data.social.map((social) => (
      
           <SocialIcon

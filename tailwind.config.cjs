@@ -26,7 +26,6 @@ module.exports = {
       Orange_2: "#f8700f",
       semiOrang: "#ffefe4",
       Yellow: "#e7ad0d",
-
       Gray: "#44475A",
       Comment: "#6272A4",
       Cyan: "#8BE9FD",
@@ -34,6 +33,17 @@ module.exports = {
       Pink: "#FF79C6",
       Purple: "#BD93F9",
       Red: "#FF5555",
+
+      bgColor:"#152032",
+      forgroundColor:"#21354e",
+      forgroundColor2:"#1a3143",
+      textGrayColor:"#566578",
+      textActivColor:"#2a6f80",
+      blueColor:"#3fbed0",
+      btnColor:"#40bdcf",
+
+
+
     },
     fontFamily: {
       Roboto: ["roboto"],
@@ -56,8 +66,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        back: "url('./src/assets/images/bg.jpg')",
-        skills: "url('./src/assets/images/banner-bg.png')",
+        laptap: "url('./assets/images/img11.jpg')",
+        tablet: "url('./assets/images/bg66.jpg')",
+        mobile2: "url('./assets/images/bg33.jpg')",
+        mobile: "url('./assets/images/bg28.png')",
       },
     },
   },

@@ -11,7 +11,7 @@ const NavMenu = ({ draweropen, setDraweropen }) => {
         {/* border-bottom: 3px solid transparent; */}
         <ul className="flex lg:inline-block lg:mt-5 lg:text-center ">
           {menuItems.map((item, index) => (
-            <li key={index} className="mr-1 md:mr-0 xl:px-[10px] lg:my-3 ">
+            <li key={index} className="mr-1 md:mr-0 px-[10px] lg:my-3 ">
               <NavLink className={({ isActive }) => isActive ? "navbar__link navbar__link--active" : "navbar__link  "}
                 onClick={(e) => setDraweropen(!draweropen)}
                 to={item.link}>
