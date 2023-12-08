@@ -1,170 +1,152 @@
 {
-    "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
-    "skills": [{
-     
-            "title": "Languages & Databases",
-            "items" : [
-                {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
-                },
-                {
-                    "icon": "images/skills/html.png",
-                    "title": "HTML"
-                },
-                {
-                    "icon": "images/skills/css.png",
-                    "title": "CSS"
-                },
-                {
-                    "icon": "images/skills/js.png",
-                    "title": "JavaScript"
-                },
-                {
-                    "icon": "images/skills/typescript.png",
-                    "title": "TypeScript"
-                },
-                {
-                    "icon": "images/skills/java.png",
-                    "title": "Java"
-                },
-                {
-                    "icon": "images/skills/python.png",
-                    "title": "Python"
-                },
-                {
-                    "icon": "images/skills/ruby.png",
-                    "title": "Ruby"
-                },
-                {
-                    "icon": "images/skills/csharp.png",
-                    "title": "C#"
-                },
-                {
-                    "icon": "images/skills/mysql.png",
-                    "title": "MySQL"
-                },
-                {
-                    "icon": "images/skills/mongo-db.png",
-                    "title": "MongoDB"
-                },
-                {
-                    "icon": "images/skills/postgresql.png",
-                    "title": "PostgreSQL"
-                }
-        ]},
+    "title":"Skills",
+  "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
+  "skills": [
+    {
+      "title": "Languages & Databases",
+      "color":"secondary",
+      "items": [
         {
-            "title": "Frameworks & Technologies",
-            "items" : [
-                {
-                    "icon": "images/skills/react.png",
-                    "title": "React"
-                },                
-                {
-                    "icon": "images/skills/angular.png",
-                    "title": "Angular"
-                },
-                {
-                    "icon": "images/skills/next.png",
-                    "title": "Nextjs"
-                },
-                {
-                    "icon": "images/skills/vuejs.png",
-                    "title": "Vuejs"
-                },
-                {
-                    "icon": "images/skills/nodejs.png",
-                    "title": "Nodejs"
-                },
-                {
-                    "icon": "images/skills/laravel.png",
-                    "title": "Laravel"
-                },
-                {
-                    "icon": "images/skills/wordpress.png",
-                    "title": "WordPress"
-                },
-                {
-                    "icon": "images/skills/shopify.png",
-                    "title": "Shopify"
-                },
-                {
-                    "icon": "images/skills/django.png",
-                    "title": "Django"
-                },
-                {
-                    "icon": "images/skills/rails.png",
-                    "title": "Ruby on Rails"
-                },
-                {
-                    "icon": "images/skills/bootstrap.png",
-                    "title": "BootStrap"
-                },
-                {
-                    "icon": "images/skills/tailwind-css.png",
-                    "title": "Tailwind CSS"
-                },
-                {
-                    "icon": "images/skills/material-ui.png",
-                    "title": "Material UI"
-                },
-                {
-                    "icon": "images/skills/rest-api.png",
-                    "title": "REST API"
-                },
-                {
-                    "icon": "images/skills/graphql.png",
-                    "title": "GraphQL"
-                }
-            ]
+          "icon": "images/skills/html.png",
+          "title": "HTML",
+          "level":90
         },
         {
-            "title" : "Tools & Platforms",
-            "items": [
-                {
-                    "icon": "images/skills/git.png",
-                    "title": "Git"
-                },
-                {
-                    "icon": "images/skills/jira.png",
-                    "title": "Jira"
-                },
-                {
-                    "icon": "images/skills/firebase.png",
-                    "title": "Firebase"
-                },
-                {
-                    "icon": "images/skills/aws.png",
-                    "title": "AWS"
-                },
-                {
-                    "icon": "images/skills/gcp.png",
-                    "title": "GCP"
-                },
-                {
-                    "icon": "images/skills/docker.png",
-                    "title": "Docker"
-                },
-                {
-                    "icon": "images/skills/vscode.png",
-                    "title": "VSCode"
-                },
-                {
-                    "icon": "images/skills/visual-studio.png",
-                    "title": "Visual Studio"
-                },
-                {
-                    "icon": "images/skills/sublime.png",
-                    "title": "Sublime"
-                },
-                {
-                    "icon": "images/skills/windows.png",
-                    "title": "Windows"
-                },
-                {
-                    "icon": "images/skills/linux.png",
-                    "title": "Linux"
-                }
-            ]
+          "icon": "images/skills/css.png",
+          "title": "CSS",
+          "level":85
+        },
+        {
+          "icon": "images/skills/js.png",
+          "title": "JavaScript",
+          "level":75
+        },
+        {
+          "icon": "images/skills/typescript.png",
+          "title": "TypeScript",
+          "level":50
+        },
+        {
+          "icon": "images/skills/php.png",
+          "title": "PHP",
+          "level":40
+        },
+        {
+          "icon": "images/skills/mysql.png",
+          "title": "MySQL",
+          "level":30
+        }
+  
+      ]
+    },
+    {
+      "title": "Frameworks & Technologies",
+      "color":"error",
+      "items": [
+        {
+          "icon": "images/skills/react.png",
+          "title": "React",
+          "level":85
+        },
+        {
+            "icon": "images/skills/redux.png",
+            "title": "Redux",
+            "level":65
+          },
+          {
+            "icon": "images/skills/vite.png",
+            "title": "Vite",
+            "level":85
+          },
+          {
+            "icon": "images/skills/tailwind-css.png",
+            "title": "Tailwind CSS",
+            "level":85
+          },
+          {
+            "icon": "images/skills/material-ui.png",
+            "title": "Material UI",
+            "level":85
+          },
+          {
+            "icon": "images/skills/bootstrap.png",
+            "title": "BootStrap",
+            "level":85
+          },
+        {
+          "icon": "images/skills/next.png",
+          "title": "Nextjs",
+          "level":10
+        },
+        {
+          "icon": "images/skills/nodejs.png",
+          "title": "Nodejs",
+          "level":10
+        },
+        {
+          "icon": "images/skills/laravel.png",
+          "title": "Laravel",
+          "level":40
+        },
+        {
+          "icon": "images/skills/wordpress.png",
+          "title": "WordPress",
+          "level":70
+        },
+ 
+        {
+          "icon": "images/skills/rest-api.png",
+          "title": "REST API",
+          "level":40
+        },
+        {
+          "icon": "images/skills/graphql.png",
+          "title": "GraphQL",
+          "level":5
+        },
+        {
+          "icon": "images/skills/axios.png",
+          "title": "Axios",
+          "level":50
+        },
+        {
+          "icon": "images/skills/react-native.png",
+          "title": "React Native",
+          "level":30
+        }
+   
+      ]
+    },
+    {
+      "title": "Tools & Platforms",
+      "color":"primary",
+      "items": [
+        {
+          "icon": "images/skills/git.png",
+          "title": "Git",
+          "level":65
+        },
+        {
+          "icon": "images/skills/npm.png",
+          "title": "NPM",
+          "level":65
+        },
+        {
+          "icon": "images/skills/webpack.png",
+          "title": "Webpack",
+          "level":65
+        },
+        {
+          "icon": "images/skills/vscode.png",
+          "title": "VSCode",
+          "level":90
+        },
+        {
+          "icon": "images/skills/linux.png",
+          "title": "Linux",
+          "level":10
+        }
+      ]
     }
-]}
+  ]
+}

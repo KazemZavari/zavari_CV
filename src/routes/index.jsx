@@ -2,6 +2,7 @@ import { Link, createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../components/Home";
 import Skills2 from "../components/Skills2";
+import Skills from "../components/Skills";
 import About from "../components/About";
 import Contact from "../components/Contact";
  

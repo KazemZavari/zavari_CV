@@ -5,6 +5,7 @@ import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import { Avatar } from '@mui/material';
 import { Link } from 'react-router-dom';
+import PageTitle from './PageTitle';
 const styles = {
   introTextContainer: {
     whiteSpace: 'pre-wrap',
@@ -32,13 +33,9 @@ const About = () => {
   return (
     <>
 
-      <div className="flex justify-center flex-grow ">
+      <div className="flex justify-center flex-grow bg-background_2 h-screen ">
         <div className='w-[1024px] mt-24 lg:px-16  '>
-          <h4 className='flex justify-center my-4 font-OswaldBold text-[28px] 
-                          '>
-            {data ? data.title : ""}
-            
-          </h4>
+        <PageTitle >   {data ? data.title : ""}</PageTitle>
           {data
             ? (
               <Fade>

@@ -1,20 +1,12 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import endpoints from "../constants/endpoints";
 import Social from "./Social"
 import Fade from "react-reveal";
-import bg3 from "../assets/images/bg33.jpg";
-import bg7 from "../assets/images/img11.jpg";
-import bg8 from "../assets/images/bg66.jpg"
-import bg9 from "../assets/images/bg44.jpg"
-import bg1 from "../assets/images/bg21.jpg"
-import "../styles.css";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import Typewriter from 'typewriter-effect';
-import { Link } from "react-router-dom";
-
+import "../styles.css";
 
 const Home = () => {
-
   const [data, setData] = useState(null);
 
   useEffect(() => {

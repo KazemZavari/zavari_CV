@@ -23,7 +23,7 @@ function Skills() {
   return (
     <>
       <div id="skills" style={{ backgroundImage: `url(${bg})` }}
-        className="wrapper bg-no-repeat bg-center bg-cover   flex ">
+        className="wrapper bg-no-repeat bg-center bg-cover   ">
         <div 
         data-aos="fade-up" 
           className="skills-wrapper text-center text-white bg-mainBackground 
@@ -32,7 +32,7 @@ function Skills() {
           <p className="text-lg py-3">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </p>
-          <div className="box flex py-20 justify-between rounded-xl items-center bg-Forground my-6">
+          <div className="box  py-20 justify-between rounded-xl items-center  my-6">
             <Swiper
               slidesPerView={10}
               spaceBetween={40}
