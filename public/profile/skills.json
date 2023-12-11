@@ -51,7 +51,7 @@
         {
             "icon": "images/skills/redux.png",
             "title": "Redux",
-            "level":65
+            "level":75
           },
           {
             "icon": "images/skills/vite.png",

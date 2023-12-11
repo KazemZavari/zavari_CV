@@ -13,7 +13,6 @@ module.exports = {
     colors: {
       white: "#fff",
       black: "#212529",
-      black_2: "#132a35",
       gray_font: "#596971",
       semiGray_font: "#e9ebec",
       mainBackground: "#132a35",
@@ -70,6 +69,7 @@ module.exports = {
         tablet: "url('./assets/images/bg66.jpg')",
         mobile2: "url('./assets/images/bg33.jpg')",
         mobile: "url('./assets/images/bg28.png')",
+        contactbg: "url('./assets/images/b2.jpg')"
       },
     },
   },

@@ -1,88 +1,111 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "../styles.css";
-import { Navigation } from "swiper";
-import { Pagination } from "swiper";
-import img from "../assets/images/meter1.svg";
-import bg from "../assets/images/banner-bg.png"
-import { useEffect } from "react";
+import React, { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import Fade from 'react-reveal';
+import endpoints from '../constants/endpoints';
+import FallbackSpinner from './FallbackSpinner';
+import Badge from '@mui/material/Badge';
+import PageTitle from './PageTitle';
+import CountUp from 'react-countup';
 import AOS from "aos";
-import "aos/dist/aos.css"; import "../styles.css";
+import { Chip } from '@mui/material';
 
-function Skills() {
+const styles = {
+  iconStyle: {
+    height: 60,
+    width: 60,
+    margin: 10,
+    marginBottom: 0,
+  },
+};
+
+const Skills = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch(endpoints.skills, {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((res) => setData(res))
+      .catch((err) => err);
+  }, []);
+
   useEffect(() => {
     AOS.init({
+      // offset: 100,
       duration: 1200,
-      offset: 200,
+      // easing: 'ease-in-sine',
+      // delay: 500,
     });
     AOS.refresh();
-
+   
   }, []);
+  const RenderSkillsIntro = (intro) => (
+    <h4 className='font-Roboto text-[18px] lg:px-7 '>
+      <ReactMarkdown children={intro} />
+    </h4>
+  );
+
   return (
     <>
-      <div id="skills" style={{ backgroundImage: `url(${bg})` }}
-        className="wrapper bg-no-repeat bg-center bg-cover   ">
-        <div 
-        data-aos="fade-up" 
-          className="skills-wrapper text-center text-white bg-mainBackground 
-                    rounded-[50px] lg:p-2">
-          <h1 className="text-4xl ">Skills</h1>
-          <p className="text-lg py-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-          <div className="box  py-20 justify-between rounded-xl items-center  my-6">
-            <Swiper
-              slidesPerView={10}
-              spaceBetween={40}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={true}
-              modules={[Navigation, Pagination]}
-              className="mySwiper "
-            >
-              <SwiperSlide className="ml-5 bg-Forground">
-                {" "}
-                <div className="  my-1 bg-Forground ">
-                  <img src={img} alt="" />
-                  <h1 className="font-bold text-2xl my-2">Web Dev</h1>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" bg-[#171717]">
-                {" "}
-                <div className="  bg-Forground ">
-                  <img src={img} alt="" />
-                  <h1 className="font-bold text-2xl my-2">Frontend </h1>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className=" bg-[#171717]">
-                {" "}
-                <div className=" bg-Forground ">
-                  <img src={img} alt="" />
-                  <h1 className="font-bold text-2xl my-2">React.js</h1>
-                </div>
-              </SwiperSlide>
 
-              <SwiperSlide className=" bg-[#171717]">
-                {" "}
-                <div className=" bg-[#171717]">
-                  <img src={img} alt="" />
-                  <h1 className="font-bold text-2xl my-2">Javascript</h1>
+      {data ? (
+        <Fade>
+          <div className="flex justify-center align-middle flex-grow min-h-screen pb-10
+                         bg-bgColor text-textGrayColor ">
+            <div className='w-[1024px] mt-24'>
+              <PageTitle > {data ? data.title : ""}</PageTitle>
+              {RenderSkillsIntro(data.intro)}
+              {data.skills?.map((rows) => (
+                <div key={rows.title} className='mt-2 text-center '>
+
+                  <div className='mt-10 mb-[-20px] '>
+                    {/* <span className={`font-MontserratBold p-2 rounded-xl text-[20px] text-center bg-Forground `}>
+                        {rows.title}
+                      </span> */}
+                    <Chip
+                      color={rows.color}
+                      className='block'
+                      label={<span className='font-MontserratBold text-[20px] text-center '>
+                        {rows.title}
+                      </span>} />
+                  </div>
+                  {
+                    rows.items.map((item) => (
+                      <div className='inline-block text-center text-[18px] mr-7 pt-4 mt-7 '>
+                        <Badge color="primary"
+                          sx={{
+                            '& .MuiBadge-badge': {
+                              background: '#3fbed0',
+                              color: '#1a3143',
+                            },
+                          }}
+                          badgeContent={
+                            <CountUp
+                              className='font-OpenSansMedium text-[15px] py-10 '
+                              start={0} end={item.level} duration={5} delay={2} suffix='%' />
+                          }
+                        >
+                          <div key={item.title} className='bg-forgroundColor2 border-2 rounded-lg border-background_hover p-[1px]' >
+                            <img
+                              style={styles.iconStyle}
+                              className='mr-5'
+                              src={item.icon}
+                              alt={item.title}
+                            />
+                            <span className='text-center font-OswaldRegular'>{item.title}</span>
+                          </div>
+                        </Badge>
+                      </div>
+
+                    ))
+                  }
                 </div>
-              </SwiperSlide>
-              <SwiperSlide className=" bg-[#171717]">
-                {" "}
-                <div className=" bg-[#171717]">
-                  <img src={img} alt="" />
-                  <h1 className="font-bold text-2xl my-2">Tailwind</h1>
-                </div>
-              </SwiperSlide>
-            </Swiper>
+              ))}
+            </div>
           </div>
-        </div>
-      </div>
+        </Fade >
+      ) : <FallbackSpinner />}
     </>
   );
 }

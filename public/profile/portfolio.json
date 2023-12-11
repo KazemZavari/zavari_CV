@@ -1,0 +1,41 @@
+{
+  "title": "Portfolio",
+  "portfolio": [
+    {
+      "image": "images/portfolio/weather-status-app.png",
+      "title": "Weadther Status App",
+      "links": {
+        "viewPage": "https://weather-status-nine.vercel.app/",
+        "viewSource": "https://github.com/KazemZavari/weather-status-app"
+      },
+
+      "tags": [
+        "React Js",
+        "Vite",
+        "TailwindCss",
+        "MUI",
+        "vercel",
+        "FetchApi",
+        "React Hooks",
+        "react-parallax"
+      ]
+    },
+    {
+      "image": "images/portfolio/portfolio.png",
+      "title": "CV & Resume App",
+      "links": {
+        "viewPage": "http://localhost:5175/",
+        "viewSource": "https://github.com/KazemZavari"
+      },
+      "tags": [
+        "React Js",
+        "TailwindCss",
+        "Vite",
+        "MUI",
+        "vercel",
+        "react-router-dom",
+        "react-countup"
+      ]
+    }
+  ]
+}

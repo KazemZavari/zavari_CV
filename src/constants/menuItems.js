@@ -12,26 +12,16 @@ export const menuItems = [
     link: "skills",
   },
   {
-    title: "Education",
-    link: "education",
-  },
-
-  // {
-  //   title: "Experience",
-  //   link: "experience",
-  // },
-  {
-    title: "Projects",
-    link: "projects",
-  },
-  {
-    title: "Contact",
-    link: "contact",
+    title: "Portfolio",
+    link: "portfolio",
   },
   {
     title: "Resume",
     link: "https://drive.google.com/file/d/1JO9QUE7oIuMpqD83sv_eiwm1TcRUJb6F/view?usp=share_link",
   },
-
+  {
+    title: "Contact",
+    link: "contact",
+  },
 
 ];

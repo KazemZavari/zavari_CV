@@ -1,11 +1,9 @@
 
 import { useEffect, useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
-// import { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 
 const Social = () => {
-
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -18,20 +16,16 @@ const Social = () => {
     }, []);
   
     return (
-      <div className=" fixed mt-64 lg:mt-[183px] md:mt-52 sm:mt-80 bg-Green p-4  lg:py-2  rounded-[10px] ">
+      <div className=" fixed mt-64 lg:mt-[183px] md:mt-52 sm:mt-80 bg-Green p-3 
+             lg:py-2 rounded-[10px] ">
         {data ? data.social.map((social) => (
-     
           <SocialIcon
             key={social.network}
-            style={{marginRight:"10px", }}
-            className=" hover:opacity-75"
+            className="opacity-80 hover:opacity-100 hover:scale-[0.9] mr-[7px] duration-500 "
             url={social.href}
             network={social.network}
-            // bgColor={theme.socialIconBgColor}
             target="_blank"
-            // rel="noopener"
           />
-
         )) : null}
       </div>
     );

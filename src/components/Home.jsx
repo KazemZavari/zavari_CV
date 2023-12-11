@@ -25,11 +25,11 @@ const Home = () => {
         <div
           id="home"
           className="bg-laptap lg:bg-tablet sm:bg-mobile bg-cover bg-center bg-no-repeat
-                     h-screen flex justify-center transition-transform "
+          h-screen flex justify-center transition-transform "
         >
-          <div className="flex mt-36 md:mt-32 lg:mt-24 justify-center text-center   
+          <div className="flex mt-36 md:mt-32 lg:mt-36 justify-center text-center   
                         lg:justify-center lg:px-6">
-            <div className="sm:mt-16">
+            <div className="sm:mt-20">
 
               <h1 className="text-gray_font lg:text-semiGray_font text-[30px] md:text-[22px] 
                               font-PlayfairDisplaySemiBold ">
