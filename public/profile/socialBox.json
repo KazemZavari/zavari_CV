@@ -1,0 +1,12 @@
+{
+  "socialBox": [
+    {
+      "network": "email",
+      "href": "mailto:zavari.dev24@gmail.com"
+    },
+    {
+      "network": "telegram",
+      "href": "https://t.me/FrontEnd_Dev24"
+    }
+  ]
+}
