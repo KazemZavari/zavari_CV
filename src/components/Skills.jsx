@@ -6,6 +6,7 @@ import FallbackSpinner from './FallbackSpinner';
 import Badge from '@mui/material/Badge';
 import PageTitle from './PageTitle';
 import CountUp from 'react-countup';
+import SocialBox from './SocialBox';
 import AOS from "aos";
 import { Chip } from '@mui/material';
 
@@ -41,7 +42,7 @@ const Skills = () => {
    
   }, []);
   const RenderSkillsIntro = (intro) => (
-    <h4 className='font-Roboto text-[18px] lg:px-7 '>
+    <h4 className='font-Roboto text-[18px] px-4 lg:px-7 -z-40'>
       <ReactMarkdown children={intro} />
     </h4>
   );
@@ -51,11 +52,17 @@ const Skills = () => {
 
       {data ? (
         <Fade>
+         
           <div className="flex justify-center align-middle flex-grow min-h-screen pb-10
                          bg-bgColor text-textGrayColor ">
+                          
             <div className='w-[1024px] mt-24'>
               <PageTitle > {data ? data.title : ""}</PageTitle>
+              <div className='md:hidden z-100 fixed'>
+              <SocialBox  />
+              </div>
               {RenderSkillsIntro(data.intro)}
+             
               {data.skills?.map((rows) => (
                 <div key={rows.title} className='mt-2 text-center '>
 

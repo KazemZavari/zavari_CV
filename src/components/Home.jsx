@@ -25,7 +25,7 @@ const Home = () => {
         <div
           id="home"
           className="bg-laptap lg:bg-tablet sm:bg-mobile bg-cover bg-center bg-no-repeat
-          h-screen flex justify-center transition-transform "
+          h-screen flex justify-center transition-transform md:overflow-auto"
         >
           <div className="flex mt-36 md:mt-32 lg:mt-36 justify-center text-center   
                         lg:justify-center lg:px-6">
@@ -51,11 +51,11 @@ const Home = () => {
                 />
               </div>
               <div className="mt-20 mb-3 lg:mt-8 md:mt-20 sm:mt-[75px] ">
-                <Link to="/contact" offset='95'
+                <Link to="mailto:zavari.dev24@gmail.com" offset='95'
                   className="text-white hover:text-Orange font-MontserratBold text-[28px]
                             md:text-[20px]">
                   Let's Connect{" "}
-                  <i className="fa-solid fa-arrow-right text-lg  p-[2px] "></i>{" "}
+                  <i className="fa-solid fa-arrow-right text-lg p-[2px] "></i>{" "}
                 </Link>
               </div>
 

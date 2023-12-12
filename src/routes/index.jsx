@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../components/Home";
 import Skills from "../components/Skills";
 import About from "../components/About";
-import Contact from "../components/Contact";
+// import Contact from "../components/Contact";
 // import Projects from "../components/Projects"
 import Portfolio from "../components/Portfolio"
 export const router = createBrowserRouter([
@@ -29,10 +29,10 @@ export const router = createBrowserRouter([
                 path: "/portfolio",
                 element: <Portfolio />
             },
-            {
-                path: "/contact",
-                element: <Contact />
-            },
+            // {
+            //     path: "/contact",
+            //     element: <Contact />
+            // },
 
             {
                 path: "/resume",

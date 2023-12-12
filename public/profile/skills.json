@@ -53,11 +53,7 @@
             "title": "Redux",
             "level":75
           },
-          {
-            "icon": "images/skills/vite.png",
-            "title": "Vite",
-            "level":85
-          },
+
           {
             "icon": "images/skills/tailwind-css.png",
             "title": "Tailwind CSS",
@@ -73,7 +69,7 @@
             "title": "BootStrap",
             "level":85
           },
-        {
+            {
           "icon": "images/skills/next.png",
           "title": "Nextjs",
           "level":10
@@ -129,7 +125,12 @@
         {
           "icon": "images/skills/npm.png",
           "title": "NPM",
-          "level":65
+          "level":80
+        },
+        {
+          "icon": "images/skills/vite.png",
+          "title": "Vite",
+          "level":90
         },
         {
           "icon": "images/skills/webpack.png",

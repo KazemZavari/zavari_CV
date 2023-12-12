@@ -17,7 +17,6 @@ const Contact = () => {
   return (
     <>
       <div id="contactForm" className="contact bg-[linear-gradient(90deg,#b004b0,#38097a);] w-full">
-        {/* bg-[linear-gradient(90deg,#b004b0,#38097a);] */}
         {/* bg-[linear-gradient(90deg,#22353e,#132a35);] */}
         <div className="wrapper flex justify-center py-28 gap-52 lg:py-12">
           <div className="imgbox lg:hidden">
@@ -60,7 +59,7 @@ const Contact = () => {
                                 w-32 font-bold ">
                 Send
               </button>
-              
+
             </form>
           </div>
         </div>

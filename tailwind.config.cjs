@@ -68,7 +68,7 @@ module.exports = {
         laptap: "url('./assets/images/img11.jpg')",
         tablet: "url('./assets/images/bg66.jpg')",
         mobile2: "url('./assets/images/bg33.jpg')",
-        mobile: "url('./assets/images/bg28.png')",
+        mobile: "url('./assets/images/bg44.jpg')",
         contactbg: "url('./assets/images/b2.jpg')"
       },
     },

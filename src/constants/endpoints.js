@@ -3,6 +3,7 @@ const endpoints = {
   routes: 'profile/routes.json',
   home: 'profile/home.json',
   social: 'profile/social.json',
+  socialBox: 'profile/socialBox.json',
   about: 'profile/about.json',
   skills: 'profile/skills.json',
   education: 'profile/education.json',
