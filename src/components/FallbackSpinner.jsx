@@ -1,5 +1,5 @@
 
-
+import React from 'react';
 const styles = {
   spinnerContainerStyle: {
     display: 'flex',

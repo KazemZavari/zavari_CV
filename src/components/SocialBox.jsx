@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import endpoints from '../constants/endpoints';
 

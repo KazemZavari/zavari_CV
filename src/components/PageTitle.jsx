@@ -1,3 +1,4 @@
+import React from 'react';
 import 'animate.css';
 const PageTitle = ({ children }) => {
     return (

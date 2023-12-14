@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React,{ useState, useEffect } from 'react';
 // import Fade from 'react-reveal/Fade';
 import endpoints from '../constants/endpoints';
 import PortfolioCard from './PortfolioCard';
