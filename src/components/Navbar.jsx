@@ -1,6 +1,7 @@
+import React from "react";
 import { useState } from "react";
 import NavMenu from "./NavMenu";
-import Fade from "react-reveal";
+// import Fade from "react-reveal";
 import { Avatar } from "@mui/material";
 import avatar from "../../public/images/about/avatar.jpg"
 import Switcher from "../theme/Switcher.jsx";
@@ -9,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Fade>
+
         <div className="flex justify-between items-center bg-background  dark:bg-[#0a3368]
                       w-full px-20 py-3 z-20 text-white dark:text-blueColor  lg:px-6 fixed ">
           <h1 className="text-[32px]  lg:text-[25px] inline cursor-pointer font-OswaldRegular">
@@ -53,7 +54,7 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-      </Fade>
+
     </>
   );
 }

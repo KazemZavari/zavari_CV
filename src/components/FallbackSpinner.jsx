@@ -1,4 +1,4 @@
-import { Spinner } from 'react-bootstrap';
+
 
 const styles = {
   spinnerContainerStyle: {
@@ -12,7 +12,7 @@ const styles = {
 const FallbackSpinner = () => {
   return (
     <div style={styles.spinnerContainerStyle}>
-      <Spinner animation="grow" />
+      please wait ...
     </div>
   );
 }

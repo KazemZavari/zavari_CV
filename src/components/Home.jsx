@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import React , { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import endpoints from "../constants/endpoints";
 import Social from "./Social"
-import Fade from "react-reveal";
 import Typewriter from 'typewriter-effect';
 import "../styles.css";
 import 'animate.css';
@@ -20,7 +19,7 @@ const Home = () => {
 
   return (
     <>
-      <Fade>
+
         <div
           id="home"
           className="bg-laptap lg:bg-tablet sm:bg-mobile bg-cover bg-center bg-no-repeat
@@ -61,7 +60,7 @@ const Home = () => {
             <Social />
           </div>
         </div>
-      </Fade>
+
     </>
   );
 }

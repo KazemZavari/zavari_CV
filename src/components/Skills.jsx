@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import Fade from 'react-reveal';
+// import {Fade} from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import Badge from '@mui/material/Badge';
@@ -49,7 +49,7 @@ const Skills = () => {
     <>
 
       {data ? (
-        <Fade>
+   
           <div className="flex justify-center align-middle flex-grow min-h-screen pb-10
                         dark:text-bgColor dark:bg-white bg-bgColor text-textGrayColor ">
             <div className='w-[1024px] mt-24'>
@@ -101,7 +101,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-        </Fade >
+
       ) : <FallbackSpinner />}
     </>
   );

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import { Avatar } from '@mui/material';
@@ -47,7 +46,7 @@ const About = () => {
           <PageTitle >{data ? data.title : ""}</PageTitle>
           {data
             ? (
-              <Fade>
+        
                 <div className='grid grid-cols-3 lg:overflow-auto min-h-screen'>
 
                   <div style={styles.introTextContainer}
@@ -83,7 +82,7 @@ const About = () => {
                     />
                   </div>
                 </div>
-              </Fade>
+     
             )
             : <FallbackSpinner />}
         </div>

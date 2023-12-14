@@ -1,3 +1,4 @@
+import React from "react";
 import { menuItems } from "../constants/menuItems"
 import { NavLink } from "react-router-dom";
 import Switcher from "../theme/Switcher";

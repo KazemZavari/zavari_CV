@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import endpoints from '../constants/endpoints';
 import PortfolioCard from './PortfolioCard';
 import PageTitle from './PageTitle';
@@ -30,11 +30,11 @@ const Portfolio = () => {
             ? (
               <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-auto lg:px-10 mt-5 gap-5 lg:gap-2 '>
                 {data.portfolio?.slice(0, numberOfItems).map((portfolio) => (
-                  <Fade key={portfolio.title} >
+                  <div key={portfolio.title} >
                     <div className='col-span-1 mt-1 sm:flex justify-center relative img-box '>
                       <PortfolioCard portfolio={portfolio} />
                     </div>
-                  </Fade>
+                  </div>
 
                 ))}
               </div>
