@@ -20,7 +20,7 @@ const PortfolioCard = (props) => {
         {portfolio.tags && (
           <div>
             {portfolio.tags.map((tag) => (
-              <Badge key={tag} className='text-[14px] mr-1 mt-3 bg-Cyan rounded-[9px] px-[6px] font-Roboto'>
+              <Badge key={tag} className='text-[14px] mr-1 mt-3 text-background bg-Cyan rounded-[9px] px-[6px] font-Roboto'>
                 {tag}
               </Badge>
             ))}
