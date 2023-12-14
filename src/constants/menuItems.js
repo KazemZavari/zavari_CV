@@ -17,7 +17,7 @@ export const menuItems = [
   },
   {
     title: "Resume",
-    link: "https://drive.google.com/file/d/1JO9QUE7oIuMpqD83sv_eiwm1TcRUJb6F/view?usp=share_link",
+    link: "https://drive.google.com/file/d/1e65YtGnDi1e2wz4COgzu7M7tWWtpZ8q6/view?usp=sharing",
   },
   // {
   //   title: "Contact",
