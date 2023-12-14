@@ -24,8 +24,8 @@
       "image": "images/portfolio/portfolio.png",
       "title": "CV & Resume App",
       "links": {
-        "viewPage": "http://localhost:5175/",
-        "viewSource": "https://github.com/KazemZavari"
+        "viewPage": "https://zavari-cv.vercel.app/",
+        "viewSource": "https://github.com/KazemZavari/zavari_CV"
       },
       "tags": [
         "React Js",

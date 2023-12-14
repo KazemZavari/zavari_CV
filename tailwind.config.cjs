@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: 'class',
-  lightMode: 'class',
+  darkMode: "class",
+  lightMode: "class",
   theme: {
-     screens: {
+    screens: {
       "2xl": { max: "1535px" },
       xl: { max: "1440px" },
       lg: { max: "1023px" },
@@ -18,7 +18,7 @@ module.exports = {
       gray_font: "#596971",
       semiGray_font: "#e9ebec",
       mainBackground: "#132a35",
-      background:"#16303d",
+      background: "#16303d",
       background_2: "#324148",
       background_hover: "#42555d",
       Forground_light: "#f5f6f6",
@@ -31,16 +31,17 @@ module.exports = {
       Comment: "#6272A4",
       Cyan: "#8BE9FD",
       Green: "#50FA7B",
-      bgColor:"#152032",
-      forgroundColor:"#21354e",
-      forgroundColor2:"#1a3143",
-      textGrayColor:"#566578",
-      textActivColor:"#2a6f80",
-      blueColor:"#3fbed0",
-      btnColor:"#40bdcf",
-
-
-
+      Pink: "#FF79C6",
+      Purple: "#BD93F9",
+      Red: "#FF5555",
+      dark: "#e9e9eb",
+      bgColor: "#152032",
+      forgroundColor: "#21354e",
+      forgroundColor2: "#1a3143",
+      textGrayColor: "#566578",
+      textActivColor: "#2a6f80",
+      blueColor: "#3fbed0",
+      btnColor: "#40bdcf",
     },
     fontFamily: {
       Roboto: ["roboto"],
@@ -67,9 +68,8 @@ module.exports = {
         tablet: "url('./assets/images/bg66.jpg')",
         mobile2: "url('./assets/images/bg33.jpg')",
         mobile: "url('./assets/images/bg44.jpg')",
-        contactbg: "url('./assets/images/b2.jpg')"
+        contactbg: "url('./assets/images/b2.jpg')",
       },
-
     },
   },
   plugins: [],
