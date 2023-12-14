@@ -32,12 +32,12 @@ const Portfolio = () => {
   return (
     <>
       <div className="flex justify-center flex-grow bg-bgColor pb-8 text-textGrayColor
-                      min-h-screen sm:h-auto md:h-auto lg:h-auto ">
+                      dark:text-bgColor dark:bg-white min-h-screen sm:h-auto md:h-auto lg:h-auto ">
         <div className='w-[1024px] mt-24 '>
           <PageTitle>{data ? data.title : ""}</PageTitle>
           {data
             ? (
-              <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1  lg:px-10 mt-5 gap-5 lg:gap-2 '>
+              <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-auto lg:px-10 mt-5 gap-5 lg:gap-2 '>
                 {data.portfolio?.slice(0, numberOfItems).map((portfolio) => (
                   <Fade key={portfolio.title} >
                     <div className='col-span-1 mt-1 sm:flex justify-center relative img-box '>
@@ -46,17 +46,6 @@ const Portfolio = () => {
                   </Fade>
 
                 ))}
-
-                {/* {!showMore
-                  && (
-                    <Button
-                      style={styles.showMoreStyle}
-                      // variant={theme.bsSecondaryVariant}
-                      onClick={() => setShowMore(true)}
-                    >
-                      
-                    </Button>
-                  )} */}
 
               </div>
 

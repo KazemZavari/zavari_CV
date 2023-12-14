@@ -39,8 +39,9 @@ const About = () => {
   return (
     <>
 
-      <div className="flex justify-center flex-grow bg-bgColor h-screen pb-10
-                     text-textGrayColor min-h-screen overflow-y-auto ">
+      <div className="flex justify-center flex-grow bg-bgColor dark:text-bgColor min-h-screen
+                     dark:bg-white h-screen pb-10 text-textGrayColor overflow-y-auto 
+                     duration-1000  ">
                       <SocialBox />
         <div className='w-[1024px] mt-24 lg:px-20 md:px-16 '>
           <PageTitle >{data ? data.title : ""}</PageTitle>
@@ -54,9 +55,10 @@ const About = () => {
                     {parseIntro(data.about)}
                     <Link to="mailto:zavari.dev24@gmail.com"
                       className="inline-block text-Orange group font-PlayfairDisplaySemiBold
-                             text-[19px] md:text-[16px] pt-4 leading-2 tracking-wide">
+                             text-[19px] md:text-[16px] pt-4 leading-2 tracking-wide ">
                       Let's   Connect   Me{" "}
-                      <i className="fa-solid fa-arrow-right text-lg p-[2px] group-hover:text-white "></i>{" "}
+                      <i className="fa-solid fa-arrow-right text-lg p-[2px] group-hover:text-white
+                      dark:group-hover:text-black "></i>{" "}
                     </Link>
                   </div>
 
@@ -64,7 +66,7 @@ const About = () => {
                     className='col-span-1 mt-2 flex justify-center lg:hidden' >
                     <Avatar
                       src={data?.imageSource}
-                      className='border-2 border-Orange'
+                      className='border-2 border-Orange rotate-[10deg] hover:rotate-[0deg] duration-500 origin-bottom-right '
                       variant="rounded"
                       sx={{
                         height: 280,

@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: 'class',
+  lightMode: 'class',
   theme: {
-    screens: {
+     screens: {
       "2xl": { max: "1535px" },
       xl: { max: "1440px" },
       lg: { max: "1023px" },
@@ -32,7 +34,6 @@ module.exports = {
       Pink: "#FF79C6",
       Purple: "#BD93F9",
       Red: "#FF5555",
-
       bgColor:"#152032",
       forgroundColor:"#21354e",
       forgroundColor2:"#1a3143",
@@ -71,6 +72,7 @@ module.exports = {
         mobile: "url('./assets/images/bg44.jpg')",
         contactbg: "url('./assets/images/b2.jpg')"
       },
+
     },
   },
   plugins: [],

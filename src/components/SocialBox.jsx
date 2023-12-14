@@ -17,7 +17,7 @@ const SocialBox = () => {
 
   return (
     <div className="z-100 w-[60px] align-middle py-1 fixed left-0 top-[50%] bg-Green
-                   hover:bg-Yellow duration-1000 text-center ">
+                   hover:bg-Yellow duration-500 text-center animate__zoomIn ">
       {data ? data.socialBox.map((social) => (
         <SocialIcon
       

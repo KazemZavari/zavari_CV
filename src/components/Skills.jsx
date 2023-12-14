@@ -54,7 +54,7 @@ const Skills = () => {
         <Fade>
          
           <div className="flex justify-center align-middle flex-grow min-h-screen pb-10
-                         bg-bgColor text-textGrayColor ">
+                        dark:text-bgColor dark:bg-white bg-bgColor text-textGrayColor ">
                           
             <div className='w-[1024px] mt-24'>
               <PageTitle > {data ? data.title : ""}</PageTitle>
@@ -93,7 +93,7 @@ const Skills = () => {
                               start={0} end={item.level} duration={5} delay={2} suffix='%' />
                           }
                         >
-                          <div key={item.title} className='bg-forgroundColor2 border-2 rounded-lg border-background_hover p-[1px]' >
+                          <div key={item.title} className='bg-forgroundColor2 dark:bg-gray_font border-2 rounded-lg border-background_hover p-[1px]' >
                             <img
                               style={styles.iconStyle}
                               className='mr-5'

@@ -17,7 +17,7 @@ const Social = () => {
 
   return (
     <div className=" fixed mt-64 lg:mt-[183px] md:mt-52 sm:mt-80 bg-Green p-3 
-             lg:py-2 rounded-[10px] ">
+             lg:py-2 rounded-[10px] animate__fadeInUpBig duration-[2s]">
       {data ? data.social.map((social) => (
         <SocialIcon
           key={social.network}

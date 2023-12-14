@@ -5,7 +5,7 @@ import Social from "./Social"
 import Fade from "react-reveal";
 import Typewriter from 'typewriter-effect';
 import "../styles.css";
-
+import 'animate.css';
 const Home = () => {
   const [data, setData] = useState(null);
 
@@ -25,19 +25,20 @@ const Home = () => {
         <div
           id="home"
           className="bg-laptap lg:bg-tablet sm:bg-mobile bg-cover bg-center bg-no-repeat
-          h-screen flex justify-center transition-transform md:overflow-auto"
+          h-screen flex justify-center transition-transform md:overflow-auto dark:bg-mobile"
         >
           <div className="flex mt-36 md:mt-32 lg:mt-36 justify-center text-center   
                         lg:justify-center lg:px-6">
             <div className="sm:mt-20">
 
               <h1 className="text-gray_font lg:text-semiGray_font text-[30px] md:text-[22px] 
-                              font-PlayfairDisplaySemiBold ">
+                              font-PlayfairDisplaySemiBold animate__fadeInDown duration-1000
+                              dark:text-semiGray_font">
                 Hi! I'm Kazem Zavari
               </h1>
               <div className="flex flex-row justify-center align-middle text-[30px] text-Orange 
                                font-PlayfairDisplaySemiBold my-4 py-2 lg:py-1 lg:my-2 md:text-[20px]
-                               sm:py-8 ">
+                               sm:py-8 animate__rubberBand   ">
                 <h2 className="inline-block  text-[30px] md:text-[21px] text-Orange
                                font-PlayfairDisplayRegular">
                   I&apos;m&nbsp;
@@ -53,7 +54,7 @@ const Home = () => {
               <div className="mt-20 mb-3 lg:mt-8 md:mt-20 sm:mt-[75px] ">
                 <Link to="mailto:zavari.dev24@gmail.com" offset='95'
                   className="text-white hover:text-Orange font-MontserratBold text-[28px]
-                            md:text-[20px]">
+                            md:text-[20px]  ">
                   Let's Connect{" "}
                   <i className="fa-solid fa-arrow-right text-lg p-[2px] "></i>{" "}
                 </Link>
@@ -63,7 +64,9 @@ const Home = () => {
             </div>
             <Social />
           </div>
+         
         </div>
+       
       </Fade>
     </>
   );
