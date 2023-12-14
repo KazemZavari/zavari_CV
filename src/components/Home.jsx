@@ -18,10 +18,8 @@ const Home = () => {
       .catch((err) => err);
   }, []);
 
-
   return (
     <>
-          {/* "href": "https://drive.google.com/file/d/1JO9QUE7oIuMpqD83sv_eiwm1TcRUJb6F/view?usp=share_link", */}
       <Fade>
         <div
           id="home"
@@ -31,7 +29,6 @@ const Home = () => {
           <div className="flex mt-36 md:mt-32 lg:mt-36 justify-center text-center   
                         lg:justify-center lg:px-6">
             <div className="sm:mt-20">
-
               <h1 className="text-gray_font lg:text-semiGray_font text-[30px] md:text-[22px] 
                               font-PlayfairDisplaySemiBold animate__fadeInDown duration-1000
                               dark:text-semiGray_font">
@@ -60,14 +57,10 @@ const Home = () => {
                   <i className="fa-solid fa-arrow-right text-lg p-[2px] "></i>{" "}
                 </Link>
               </div>
-
-
             </div>
             <Social />
           </div>
-         
         </div>
-       
       </Fade>
     </>
   );

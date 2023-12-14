@@ -20,7 +20,6 @@ const SocialBox = () => {
                    hover:bg-Yellow duration-500 text-center animate__zoomIn ">
       {data ? data.socialBox.map((social) => (
         <SocialIcon
-      
           key={social.network}
           className="opacity-80 hover:opacity-100 hover:scale-[0.9] mt-1 duration-500 w-5 h-5 "
           url={social.href}

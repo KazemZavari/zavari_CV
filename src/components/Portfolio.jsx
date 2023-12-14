@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import endpoints from '../constants/endpoints';
 import PortfolioCard from './PortfolioCard';
 import PageTitle from './PageTitle';
 import FallbackSpinner from './FallbackSpinner';
 
-const styles = {
-  containerStyle: {
-    marginBottom: 25,
-  },
-  showMoreStyle: {
-    margin: 25,
-  },
-};
-
 const Portfolio = () => {
-
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
 
@@ -28,7 +17,9 @@ const Portfolio = () => {
       .then((res) => setData(res))
       .catch((err) => err);
   }, []);
+
   const numberOfItems = showMore && data ? data.length : 6;
+
   return (
     <>
       <div className="flex justify-center flex-grow bg-bgColor pb-8 text-textGrayColor
@@ -46,11 +37,7 @@ const Portfolio = () => {
                   </Fade>
 
                 ))}
-
               </div>
-
-
-
             ) : <FallbackSpinner />}
         </div>
       </div>

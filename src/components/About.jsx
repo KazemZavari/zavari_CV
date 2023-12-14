@@ -7,6 +7,7 @@ import { Avatar } from '@mui/material';
 import { Link } from 'react-router-dom';
 import SocialBox from './SocialBox';
 import PageTitle from './PageTitle';
+
 const styles = {
   introTextContainer: {
     whiteSpace: 'pre-wrap',
@@ -16,7 +17,6 @@ const styles = {
     letterSpacing: '-0.01em',
     wordSpacing: '-3px',
     textIndent: '15px',
-
   },
 };
 
@@ -42,7 +42,7 @@ const About = () => {
       <div className="flex justify-center flex-grow bg-bgColor dark:text-bgColor min-h-screen
                      dark:bg-white h-screen pb-10 text-textGrayColor overflow-y-auto 
                      duration-1000  ">
-                      <SocialBox />
+        <SocialBox />
         <div className='w-[1024px] mt-24 lg:px-20 md:px-16 '>
           <PageTitle >{data ? data.title : ""}</PageTitle>
           {data
@@ -82,15 +82,10 @@ const About = () => {
                       }}
                     />
                   </div>
-
                 </div>
-
-
               </Fade>
-
             )
             : <FallbackSpinner />}
-
         </div>
       </div>
     </>

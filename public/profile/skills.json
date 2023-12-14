@@ -143,6 +143,16 @@
           "level":90
         },
         {
+          "icon": "images/skills/Photoshop.png",
+          "title": "Photoshop",
+          "level":40
+        },
+        {
+          "icon": "images/skills/Adobe_XD.png",
+          "title": "Adobe_XD",
+          "level":40
+        },
+        {
           "icon": "images/skills/linux.png",
           "title": "Linux",
           "level":10

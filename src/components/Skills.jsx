@@ -12,8 +12,8 @@ import { Chip } from '@mui/material';
 
 const styles = {
   iconStyle: {
-    height: 60,
-    width: 60,
+    height: 70,
+    width: 70,
     margin: 10,
     marginBottom: 0,
   },
@@ -33,13 +33,11 @@ const Skills = () => {
 
   useEffect(() => {
     AOS.init({
-      // offset: 100,
       duration: 1200,
-      // easing: 'ease-in-sine',
-      // delay: 500,
+
     });
     AOS.refresh();
-   
+
   }, []);
   const RenderSkillsIntro = (intro) => (
     <h4 className='font-Roboto text-[18px] px-4 lg:px-7 -z-40'>
@@ -52,24 +50,17 @@ const Skills = () => {
 
       {data ? (
         <Fade>
-         
           <div className="flex justify-center align-middle flex-grow min-h-screen pb-10
                         dark:text-bgColor dark:bg-white bg-bgColor text-textGrayColor ">
-                          
             <div className='w-[1024px] mt-24'>
               <PageTitle > {data ? data.title : ""}</PageTitle>
               <div className='md:hidden z-100 fixed'>
-              <SocialBox  />
+                <SocialBox />
               </div>
               {RenderSkillsIntro(data.intro)}
-             
               {data.skills?.map((rows) => (
                 <div key={rows.title} className='mt-2 text-center '>
-
                   <div className='mt-10 mb-[-20px] '>
-                    {/* <span className={`font-MontserratBold p-2 rounded-xl text-[20px] text-center bg-Forground `}>
-                        {rows.title}
-                      </span> */}
                     <Chip
                       color={rows.color}
                       className='block'
@@ -104,7 +95,6 @@ const Skills = () => {
                           </div>
                         </Badge>
                       </div>
-
                     ))
                   }
                 </div>
