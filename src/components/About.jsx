@@ -10,11 +10,11 @@ import PageTitle from './PageTitle';
 const styles = {
   introTextContainer: {
     whiteSpace: 'pre-wrap',
-    textAlign: 'center',
-    textAlign: 'justify',
+    textAlign: 'left',
+    // textAlign: 'justify',
     fontSize: '1.2em',
-    letterSpacing: '-0.01em',
-    wordSpacing: '-3px',
+    // letterSpacing: '-0.01em',
+    // wordSpacing: '-4px',
     textIndent: '15px',
   },
 };
@@ -39,18 +39,18 @@ const About = () => {
     <>
 
       <div className="flex justify-center flex-grow bg-bgColor dark:text-bgColor min-h-screen
-                     dark:bg-white h-screen pb-10 text-textGrayColor overflow-y-auto 
-                     duration-1000  ">
-        <SocialBox />
-        <div className='w-[1024px] mt-24 lg:px-20 md:px-16 '>
+                     dark:bg-white h-screen pb-10 text-textGrayColor overflow-y-scroll
+                     duration-1000 ">
+        {/* <SocialBox /> */}
+        <div className='w-[1024px] mt-24 lg:px-5 lg:pr-7 '>
           <PageTitle >{data ? data.title : ""}</PageTitle>
           {data
             ? (
         
-                <div className='grid grid-cols-3 lg:overflow-auto min-h-screen'>
+                <div className='grid grid-cols-3  min-h-screen'>
 
                   <div style={styles.introTextContainer}
-                    className=' col-span-2 lg:col-span-3 font-OpenSansSemiBold pl-2  '>
+                    className=' col-span-2 lg:col-span-3 font-OpenSansSemiBold pl-2 pb-10  '>
                     {parseIntro(data.about)}
                     <Link to="mailto:zavari.dev24@gmail.com"
                       className="inline-block text-Orange group font-PlayfairDisplaySemiBold

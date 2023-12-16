@@ -6,14 +6,14 @@ import { Avatar } from "@mui/material";
 import avatar from "../../public/images/about/avatar.jpg"
 import Switcher from "../theme/Switcher.jsx";
 const Navbar = () => {
-  const [draweropen, setDraweropen] = useState(false);
+  const [draweropen, setDraweropen] = useState(true);
 
   return (
     <>
 
-        <div className="flex justify-between items-center bg-background  dark:bg-[#0a3368]
-                      w-full px-20 py-3 z-20 text-white dark:text-blueColor  lg:px-6 fixed ">
-          <h1 className="text-[32px]  lg:text-[25px] inline cursor-pointer font-OswaldRegular">
+        <div className="flex justify-between items-center bg-background  dark:bg-[#0a3368] 
+                      w-full px-20 py-3 z-20 text-white  lg:px-6 fixed  ">
+          <h1 className="text-[32px] lg:text-[24px] inline cursor-pointer font-OswaldRegular duration-700">
             Dev_24
           </h1>
           <nav
@@ -21,7 +21,7 @@ const Navbar = () => {
               "lg:hidden"
               } lg:fixed lg:top-[114px] xl:top-16 z-20 lg:bg-Forground lg:opacity-100 
                lg:h-[490px] md:opacity-100 w-[100%] md:right-0 md:text lg:items-start cursor-pointer 
-              animate__slideInRight `} >
+              animate__slideInRight dark:lg:bg-gray_font`} >
 
             <NavMenu setDraweropen={setDraweropen} draweropen={draweropen} />
           </nav>
