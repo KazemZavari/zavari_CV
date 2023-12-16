@@ -4,6 +4,7 @@ import endpoints from '../constants/endpoints';
 import PortfolioCard from './PortfolioCard';
 import PageTitle from './PageTitle';
 import FallbackSpinner from './FallbackSpinner';
+import SocialBox from './SocialBox';
 
 const Portfolio = () => {
   const [data, setData] = useState(null);
@@ -26,6 +27,10 @@ const Portfolio = () => {
                       dark:text-bgColor dark:bg-white min-h-screen sm:h-auto md:h-auto lg:h-auto ">
         <div className='w-[1024px] mt-24 '>
           <PageTitle>{data ? data.title : ""}</PageTitle>
+          <div className='lg:hidden'>
+          <SocialBox />
+          </div>
+       
           {data
             ? (
               <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-auto lg:px-10 mt-5 gap-5 lg:gap-2 '>
