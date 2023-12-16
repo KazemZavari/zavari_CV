@@ -12,7 +12,9 @@ const Navbar = () => {
     <>
 
         <div className="flex justify-between items-center bg-background  dark:bg-[#0a3368] 
-                      w-full px-20 py-3 z-20 text-white  lg:px-6 fixed  ">
+                      w-full px-20 py-3 z-20 text-white dark:text-blueColor lg:px-6 fixed  "
+              
+                      >
           <h1 className="text-[32px] lg:text-[24px] inline cursor-pointer font-OswaldRegular duration-700">
             Dev_24
           </h1>

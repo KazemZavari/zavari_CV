@@ -40,7 +40,7 @@ const Skills = () => {
 
   }, []);
   const RenderSkillsIntro = (intro) => (
-    <h4 className='font-Roboto text-[18px] px-4 lg:px-7 -z-40'>
+    <h4 className='font-Roboto text-[18px] px-40 md:px-10 z-40  '>
       <ReactMarkdown children={intro} />
     </h4>
   );
@@ -50,7 +50,7 @@ const Skills = () => {
 
       {data ? (
    
-          <div className="flex justify-center align-middle flex-grow min-h-screen pb-10
+          <div className="flex justify-center align-middle flex-grow min-h-screen pb-20
                         dark:text-bgColor dark:bg-white bg-bgColor text-textGrayColor ">
             <div className='w-[1024px] mt-24'>
               <PageTitle > {data ? data.title : ""}</PageTitle>
@@ -60,7 +60,7 @@ const Skills = () => {
               {RenderSkillsIntro(data.intro)}
               {data.skills?.map((rows) => (
                 <div key={rows.title} className='mt-2 text-center '>
-                  <div className='mt-10 mb-[-20px] '>
+                  <div className='mt-10 mb-[-20px]  '>
                     <Chip
                       color={rows.color}
                       className='block'
