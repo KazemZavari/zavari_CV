@@ -17,11 +17,10 @@ export const menuItems = [
   },
   {
     title: "Resume",
-    link: "https://drive.google.com/file/d/1e65YtGnDi1e2wz4COgzu7M7tWWtpZ8q6/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1KrWL_wD0KjHPzdNedNe6GuypC30iPdND/view?usp=drive_link",
   },
   // {
   //   title: "Contact",
   //   link: "contact",
   // },
-
 ];
