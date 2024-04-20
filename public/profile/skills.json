@@ -25,16 +25,6 @@
           "icon": "images/skills/typescript.png",
           "title": "TypeScript",
           "level":50
-        },
-        {
-          "icon": "images/skills/php.png",
-          "title": "PHP",
-          "level":40
-        },
-        {
-          "icon": "images/skills/mysql.png",
-          "title": "MySQL",
-          "level":30
         }
   
       ]
@@ -79,11 +69,7 @@
           "title": "Nodejs",
           "level":10
         },
-        {
-          "icon": "images/skills/laravel.png",
-          "title": "Laravel",
-          "level":40
-        },
+
         {
           "icon": "images/skills/wordpress.png",
           "title": "WordPress",
@@ -95,20 +81,11 @@
           "title": "REST API",
           "level":40
         },
-        {
-          "icon": "images/skills/graphql.png",
-          "title": "GraphQL",
-          "level":5
-        },
+  
         {
           "icon": "images/skills/axios.png",
           "title": "Axios",
           "level":50
-        },
-        {
-          "icon": "images/skills/react-native.png",
-          "title": "React Native",
-          "level":30
         }
    
       ]
@@ -155,7 +132,7 @@
         {
           "icon": "images/skills/linux.png",
           "title": "Linux",
-          "level":10
+          "level":2
         }
       ]
     }
