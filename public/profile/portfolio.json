@@ -2,6 +2,47 @@
   "title": "Portfolio",
   "portfolio": [
     {
+      "image": "images/portfolio/conferencePro.png",
+      "title": "International-Conference-App",
+      "links": {
+        "viewPage": "https://conferenceday.vercel.app/",
+        "viewSource": "https://github.com/KazemZavari/international-conference-app"
+      },
+      "tags": [
+        "React Js",
+        "TailwindCss",
+        "Vite",
+        "antd",
+        "react-router-dom",
+        "axios",
+        "react-toastify",
+        "react-infinite-scroll-component",
+        "vercel",
+        "react-scroll-parallax",
+        "react-hook-form",
+        "scroll-carousel-react",
+        "swiper"
+      ]
+    },
+
+    {
+      "image": "images/portfolio/portfolio.png",
+      "title": "CV & Resume App",
+      "links": {
+        "viewPage": "https://zavari-cv.vercel.app/",
+        "viewSource": "https://github.com/KazemZavari/zavari_CV"
+      },
+      "tags": [
+        "React Js",
+        "TailwindCss",
+        "Vite",
+        "MUI",
+        "vercel",
+        "react-router-dom",
+        "react-countup"
+      ]
+    },
+    {
       "image": "images/portfolio/weather-status-app.png",
       "title": "Weadther Status App",
       "links": {
@@ -18,23 +59,6 @@
         "FetchApi",
         "React Hooks",
         "react-parallax"
-      ]
-    },
-    {
-      "image": "images/portfolio/portfolio.png",
-      "title": "CV & Resume App",
-      "links": {
-        "viewPage": "https://zavari-cv.vercel.app/",
-        "viewSource": "https://github.com/KazemZavari/zavari_CV"
-      },
-      "tags": [
-        "React Js",
-        "TailwindCss",
-        "Vite",
-        "MUI",
-        "vercel",
-        "react-router-dom",
-        "react-countup"
       ]
     }
   ]
