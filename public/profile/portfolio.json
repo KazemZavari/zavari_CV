@@ -10,18 +10,20 @@
       },
       "tags": [
         "React Js",
+        "typescript",
         "TailwindCss",
         "Vite",
         "antd",
         "react-router-dom",
         "axios",
-        "react-toastify",
+        "swiper",
         "react-infinite-scroll-component",
         "vercel",
         "react-scroll-parallax",
         "react-hook-form",
         "scroll-carousel-react",
-        "swiper"
+        "react-toastify",
+        "framer-motion"
       ]
     },
 
