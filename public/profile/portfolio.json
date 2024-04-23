@@ -10,7 +10,7 @@
       },
       "tags": [
         "React Js",
-        "typescript",
+        "Typescript",
         "TailwindCss",
         "Vite",
         "antd",
@@ -29,7 +29,7 @@
 
     {
       "image": "images/portfolio/portfolio.png",
-      "title": "CV & Resume App",
+      "title": "CV & Resume-App",
       "links": {
         "viewPage": "https://zavari-cv.vercel.app/",
         "viewSource": "https://github.com/KazemZavari/zavari_CV"
@@ -46,7 +46,7 @@
     },
     {
       "image": "images/portfolio/weather-status-app.png",
-      "title": "Weadther Status App",
+      "title": "Weather-Status-App",
       "links": {
         "viewPage": "https://weather-status-nine.vercel.app/",
         "viewSource": "https://github.com/KazemZavari/weather-status-app"
